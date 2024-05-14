@@ -1,0 +1,8 @@
+const path = require('path');
+
+module.exports = function override(config, env) {
+  // Update the public folder path to point to the correct location
+  config.output.publicPath = path.join(__dirname, 'src');
+
+  return config;
+};
